@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFCCB2"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btIniciar"
+        android:layout_width="0dp"
+        android:layout_height="109dp"
+        android:backgroundTint="#805009"
+        android:text="Inicializar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btFinalizar"
+        app:layout_constraintEnd_toStartOf="@+id/btFinalizar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btFinalizar"
+        android:layout_width="0dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="268dp"
+        android:backgroundTint="#805009"
+        android:text="Finalizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btIniciar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="204dp"
+        android:text="Esta app se creó para mostrar los últimos 5 sms por consola."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btIniciar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
